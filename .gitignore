@@ -1,0 +1,7 @@
+# PhpStorm
+.idea
+
+# Docker Compose
+.env
+
+.vscode
