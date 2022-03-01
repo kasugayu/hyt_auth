@@ -46,6 +46,8 @@ RUN apt-get update && \
   composer config -g process-timeout 3600 && \
   composer config -g repos.packagist composer https://packagist.org
 
+#https://qiita.com/manbolila/items/498aae00f3574c72f031
+#https://www.webopixel.net/php/1661.html
 RUN apt-get -y update
 RUN apt-get install -y \
     curl \
