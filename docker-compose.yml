@@ -12,11 +12,11 @@ services:
       - ./backend:/work/backend
     environment:
       - DB_CONNECTION=mysql
-      - DB_HOST=db
-      - DB_PORT=3307
-      - DB_DATABASE=${DB_NAME:-laravel_local}
-      - DB_USERNAME=${DB_USER:-phper}
-      - DB_PASSWORD=${DB_PASS:-secret}
+      - DB_HOST=calibur-dev.ccpcijx1hk7m.ap-northeast-1.rds.amazonaws.com
+      - DB_PORT=3306
+      - DB_DATABASE=${DB_NAME:-calibur_auth}
+      - DB_USERNAME=${DB_USER:-admin}
+      - DB_PASSWORD=${DB_PASS:-65rQVLBv6QzRSZnbB0lS}
 
   web:
     build:
@@ -37,7 +37,7 @@ services:
       context: .
       dockerfile: ./infra/docker/mysql/Dockerfile
     ports:
-      - ${DB_PORT:-3307}:3306
+      - ${DB_PORT:-33060}:3306
     volumes:
       - db-store:/var/lib/mysql
     environment:

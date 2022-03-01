@@ -1,0 +1,6 @@
+{
+    "require": {
+        "laravel/jetstream": "^2.6",
+        "laravel/sanctum": "^2.14"
+    }
+}
