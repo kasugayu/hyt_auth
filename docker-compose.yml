@@ -10,6 +10,7 @@ services:
     volumes:
       - php-fpm-socket:/var/run/php-fpm
       - ./backend:/work/backend
+      - ./mail.ini:/etc/php.d/mail.ini:ro
     environment:
       - DB_CONNECTION=mysql
       - DB_HOST=calibur-dev.ccpcijx1hk7m.ap-northeast-1.rds.amazonaws.com
@@ -45,3 +46,10 @@ services:
       - MYSQL_USER=${DB_USER:-phper}
       - MYSQL_PASSWORD=${DB_PASS:-secret}
       - MYSQL_ROOT_PASSWORD=${DB_PASS:-secret}
+
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
+
