@@ -13,11 +13,11 @@ services:
       - ./mail.ini:/etc/php.d/mail.ini:ro
     environment:
       - DB_CONNECTION=mysql
-      - DB_HOST=calibur-dev.ccpcijx1hk7m.ap-northeast-1.rds.amazonaws.com
+      - DB_HOST=db
       - DB_PORT=3306
-      - DB_DATABASE=${DB_NAME:-calibur_auth}
-      - DB_USERNAME=${DB_USER:-admin}
-      - DB_PASSWORD=${DB_PASS:-65rQVLBv6QzRSZnbB0lS}
+      - DB_DATABASE=${DB_NAME:-laravel_local}
+      - DB_USERNAME=${DB_USER:-phper}
+      - DB_PASSWORD=${DB_PASS:-secret}
 
   web:
     build:
