@@ -29,9 +29,9 @@ class ComposerStaticInit81c222c1525ec211b658305586b9482d
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -588,6 +588,7 @@ class ComposerStaticInit81c222c1525ec211b658305586b9482d
         'App\\Models\\Team' => __DIR__ . '/../..' . '/app/Models/Team.php',
         'App\\Models\\TeamInvitation' => __DIR__ . '/../..' . '/app/Models/TeamInvitation.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\UserActivation' => __DIR__ . '/../..' . '/app/Models/UserActivation.php',
         'App\\Policies\\TeamPolicy' => __DIR__ . '/../..' . '/app/Policies/TeamPolicy.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -4767,6 +4768,8 @@ class ComposerStaticInit81c222c1525ec211b658305586b9482d
         'SebastianBergmann\\CodeCoverage\\Node\\File' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Node/File.php',
         'SebastianBergmann\\CodeCoverage\\Node\\Iterator' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Node/Iterator.php',
         'SebastianBergmann\\CodeCoverage\\ParserException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/ParserException.php',
+        'SebastianBergmann\\CodeCoverage\\ProcessedCodeCoverageData' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/ProcessedCodeCoverageData.php',
+        'SebastianBergmann\\CodeCoverage\\RawCodeCoverageData' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/RawCodeCoverageData.php',
         'SebastianBergmann\\CodeCoverage\\ReflectionException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/ReflectionException.php',
         'SebastianBergmann\\CodeCoverage\\ReportAlreadyFinalizedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/ReportAlreadyFinalizedException.php',
         'SebastianBergmann\\CodeCoverage\\Report\\Clover' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Report/Clover.php',
@@ -5831,6 +5834,7 @@ class ComposerStaticInit81c222c1525ec211b658305586b9482d
         'Symfony\\Component\\VarDumper\\Caster\\IntlCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/IntlCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\LinkStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/LinkStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\MemcachedCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/MemcachedCaster.php',
+        'Symfony\\Component\\VarDumper\\Caster\\MysqliCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/MysqliCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\PdoCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/PdoCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\PgSqlCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/PgSqlCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ProxyManagerCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ProxyManagerCaster.php',

@@ -3,10 +3,12 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
+use App\Models\UserActivation;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 use Laravel\Jetstream\Jetstream;
+use Illuminate\Support\Facades\Session;
 
 class CreateNewUser implements CreatesNewUsers
 {
@@ -20,6 +22,10 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        // メールアドレスをSessionから復元
+        // $email = Session::get('email');
+
+        // validation
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
